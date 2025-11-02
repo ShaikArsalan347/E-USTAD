@@ -31,7 +31,11 @@ body {
   height: 9.6rem;
   padding: 0 4.8rem;
   backdrop-filter: blur(30px);
+  border-radius: 50px;
+  max-width: 145rem;
+  margin: 4rem auto;
 }
+/*  */
 
 .logo {
   width: 100%;
@@ -42,7 +46,7 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-  color: #fff;
+  color: #62ff00;
   font-size: 3rem;
 }
 
@@ -54,14 +58,13 @@ body {
   cursor: pointer;
   display: none;
 }
-
 .nav-link:link,
 .nav-link:visited {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   transition: all 0.3s;
 }
 
@@ -69,6 +72,12 @@ body {
 .nav-link:active {
   color: #62ff00;
 }
+.nav-link.active {
+  border-bottom: 0.4rem solid;
+  border-image: linear-gradient(90deg, #b7feb6 0%, #61fe01 100%) 1;
+  border-radius: 12px;
+}
+
 /* .icon-mobile-nav {
   font-size: 4.8rem;
   color: #333;
@@ -77,6 +86,9 @@ body {
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 } */
+.desktop-btns-container {
+  display: none;
+}
 
 .sticky .header {
   position: fixed;
@@ -93,4 +105,56 @@ body {
 
 .sticky .hero-section {
   margin-top: 9.6rem;
+}
+
+/* ******************* */
+/* HEADER */
+/* ******************* */
+
+.hero-description {
+  max-width: 130rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.hero-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.start-learning-btn {
+  background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
+}
+.upload-btn-conatiner {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ff00 0%, #ffffff 100%);
+  border-radius: 40px;
+  padding: 3px;
+}
+
+.Upload-notes-btn {
+  display: inline-block;
+  padding: 12px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: linear-gradient(90deg, #00ff00, #ffffff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: text, border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Upload-notes-btn {
+  background: linear-gradient(#030507, #030507) padding-box;
+  border-radius: 50px;
+  backdrop-filter: blur(60px);
 }
