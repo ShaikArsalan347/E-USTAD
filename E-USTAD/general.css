@@ -1,0 +1,54 @@
+.container {
+  max-width: 145rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.primary-heading,
+.secondary-heading {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.hero-heading {
+  line-height: 1.05;
+  font-size: 2.2rem;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.primary-heading {
+  line-height: 1.05;
+  font-size: 8.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  text-transform: capitalize;
+}
+
+.tettiary-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}

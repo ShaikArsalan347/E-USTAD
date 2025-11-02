@@ -1,32 +1,40 @@
-body{
-    background-color: black;
-    font-family: "Poppins", sans-serif;
-    }
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
 
-    .hero {
-        align-items: center;
-        display: flex;
-    justify-content: center;
-    }
+.hero {
+  background-image: url(./images/backgrnd_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    h1,h5{
-        color: white;
-        position: absolute;
-    }
+.hero-description {
+  max-width: 130rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
 
-    h1{
-        font-size: 50px;
-        font-weight: bold;
-    }
+.hero-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
 
-    h5{
-        font-size: 20px;
-        font-weight: lighter;
-    }
-   
-     .bgimg {
-        position: relative;
-        width: 900px;
-        
-    }
-    
+.start-learning-btn {
+  background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
+}
+.Upload-notes-btn {
+  border: 0.4rem solid;
+  border-image: linear-gradient(90deg, #b7feb6 0%, #61fe01 100%) 1;
+  color: #fff;
+  background-color: transparent;
+}
