@@ -94,7 +94,7 @@
 .start-eating-btn:link,
 .start-eating-btn:visited {
   background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
-  color: #fff;
+  color: #000;
 }
 
 .start-eating-btn:hover,
@@ -185,11 +185,11 @@ strong {
   text-align: center;
 }
 
-.gradient-border {
+/* .gradient-border {
   padding: 0.35rem;
   background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
   border-radius: 99px;
-}
+} */
 .gradient-border-hero {
   padding: 0.15rem;
   background: linear-gradient(104.51deg, #62ff00 20.52%, #fff 100.21%);

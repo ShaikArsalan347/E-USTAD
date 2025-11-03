@@ -117,10 +117,13 @@ body {
   display: inline-block;
   padding: 0.9rem 2.4rem;
   border-radius: 999px;
-  background: rgba(183, 183, 183, 0.734);
+  /* background: rgba(183, 183, 183, 0.734); */
+  border: 3px solid #62ff00;
   color: #fff;
 }
-
+.main-nav-link.cta-nav.btn-login:hover {
+  transform: scale(0.95);
+}
 .main-nav-link.btn-signup {
   /* display: inline-block; */
   padding: 0.8rem 1.6rem;
@@ -128,8 +131,12 @@ body {
   background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
 }
 
-.main-nav-link.btn-signup:hover {
-  transform: translateY(-2px);
+.main-nav-link.btn-signup:hover,
+.Learn-more-btn:hover,
+.start-eating-btn:hover {
+  transform: scale(0.95);
+
+  /* transform: translateY(-2px); */
   filter: brightness(0.95);
 }
 
@@ -147,7 +154,7 @@ body {
 
 .icon-mobile-nav {
   font-size: 4.8rem;
-  color: #333;
+  color: #fff;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -168,7 +175,7 @@ body {
   z-index: 999;
   height: 8rem;
   box-shadow: 0 1.2rem 3.2rem rgba(194, 82, 82, 0.058);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(10px);
 }
 
 .sticky .hero-section {
@@ -565,6 +572,7 @@ body {
 
 .cta-form button {
   background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
+  color: #333;
 }
 
 .cta *:focus {
