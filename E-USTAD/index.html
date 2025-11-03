@@ -1,53 +1,449 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <mata
+      name="description"
+      content="Eustad makes learning simple, fun, and consistent — every single day.
+Powered by AI, personalized just for your growth journey."
+    />
+    <link rel=" preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <link rel="icon" href="./img/logos/favicon.ico" />
+    <title>Omnifood &mdash; Never Cook Again!</title>
+  </head>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EUSTAD-“Empowering the next generation of e learners.”</title>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./queries.css">
-<link rel="stylesheet" href="./general.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <header class="header sticky container">
+      <a href="#">
+        <img src="./images/e_ustadlogo.png" alt="omnifood-logo" class="logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#footer">Contact Us</a></li>
+          <div class="cta-nav-btns">
+            <span class="gradient-border">
+              <li>
+                <a class="main-nav-link cta-nav btn-login" href="#cta"
+                  >Log in</a
+                >
+              </li>
+            </span>
+            <li>
+              <a class="main-nav-link cta-nav btn-signup" href="#cta"
+                >Sign up</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero container">
+          <div class="hero-text-box">
+            <h1 class="primary-heading">
+              Empowering the next generation of E - learners.
+            </h1>
+            <p class="hero-description">
+              We make learning Simple. And help students understand the
+              concepts.
+            </p>
+            <div class="hero-btns-container">
+              <a href="#cta" class="btn start-eating-btn margin-right-sm"
+                >start learning</a
+              >
+              <span class="gradient-border-hero">
+                <a href="#how" class="btn Learn-more-btn"
+                  >upload notes &darr;</a
+                >
+              </span>
+            </div>
+          </div>
+          <!-- <div class="hero-img-box">
+            <img
+              src="./images/backgrnd_img.png"
+              alt="hero.png"
+              class="hero-img"
+            />
+          </div> -->
+        </div>
+      </section>
+      <!-- <section class="section-featured-in">
+        <div class="container">
+          <h2 class="heading-featured-in">as featured in</h2>
+          <div class="logos">
+            <img src="./img/logos/techcrunch.png" alt="techcrunch logo" />
+            <img
+              src="./img/logos/business-insider.png"
+              alt="business-insider logo"
+            />
+            <img
+              src="./img/logos/the-new-york-times.png"
+              alt="the-new-york-times logo"
+            />
+            <img src="./img/logos/forbes.png" alt="forbes logo" />
+            <img src="./img/logos/usa-today.png" alt="usa-today logo" />
+          </div>
+        </div>
+      </section> -->
+      <section class="section-how" id="how">
+        <!-- step 01 -->
 
-<body>
-    <header class="header">
-        <a href="#">
-            <img src="./images/e_ustadlogo.png" alt="omnifood-logo" class="logo"></a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a class="nav-link active" href="#">Home</a></li>
-                <li><a class="nav-link" href="#how">About us</a></li>
-                <li><a class="nav-link" href="#footer">Our mission</a></li>
-            </ul>
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="secondary-heading">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="tettiary-heading">Upload Notes</h3>
+            <p class="step-decription">
+              Share your PDFs or images to unlock a world of collaborative
+              learning. Get instant AI-powered insights, detailed annotations,
+              and smart summaries that transform your study materials into
+              interactive knowledge hubs. Perfect for students, educators, and
+              professionals seeking deeper understanding through collective
+              wisdom and advanced document analysis.
+            </p>
+          </div>
+          <span class="gradient-border-step">
+            <div class="step-img-box">
+              <img
+                src="./images/uploadnotes.png"
+                class="step-img"
+                alt="app-screen-1.png"
+              />
+            </div>
+          </span>
+          <!-- step 02 -->
+          <span class="gradient-border-step">
+            <div class="step-img-box">
+              <img
+                src="images/step-2.png"
+                class="step-img step-2-img"
+                alt="app-screen-2.png"
+              />
+            </div>
+          </span>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="tettiary-heading">Use our Free Chatbot</h3>
+            <p class="step-decription">
+              Dive deep into any topic. Our new Chatotbot is built to support
+              your journey to continuous learning and collaboration.
+            </p>
+          </div>
+          <!-- step 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="tettiary-heading">Understand Better</h3>
+            <p class="step-decription">
+              This platform makes big, hard ideas simple and easy to grasp.
+              Learn quicker and feel more confident.
+            </p>
+          </div>
+          <span class="gradient-border-step">
+            <div class="step-img-box">
+              <img
+                src="./images/understan-better.png"
+                class="step-img"
+                alt="app-screen-3.png"
+              />
+            </div>
+          </span>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">testimonial</span>
+          <h2 class="secondary-heading">
+            Transform your learning experience with us
+          </h2>
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                src="./images/users/image-1.png"
+                alt="dave.jpg"
+                class="testimonial-img"
+              />
+              <blockquote class="testimonial-text">
+                The AI-powered study tools are incredible! I can understand
+                complex topics so much faster now. The instant insights and
+                summaries make learning feel effortless and engaging.
+              </blockquote>
+              <p class="testimonial-name">&mdash;Dave Bryson</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="./images/users/image-2.png"
+                alt="ben.jpg"
+                class="testimonial-img"
+              />
+              <blockquote class="testimonial-text">
+                As a teacher, E-USTAD has transformed how I create and share
+                materials. The collaborative features and AI assistance help me
+                make better content for my students. It's a game-changer for
+                education!
+              </blockquote>
+              <p class="testimonial-name">&mdash;Ben Hadley</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="./images/users/image-3.png"
+                alt="Steve.jpg"
+                class="testimonial-img"
+              />
+              <blockquote class="testimonial-text">
+                Being a busy student, E-USTAD's chatbot helps me get quick
+                answers and clarify concepts instantly. The way it breaks down
+                complex topics into simple explanations is amazing!
+              </blockquote>
+              <p class="testimonial-name">&mdash;Steve Miller</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                src="./images/users/image-4.png"
+                alt="hannah.jpg"
+                class="testimonial-img"
+              />
+              <blockquote class="testimonial-text">
+                The document analysis feature is brilliant! I upload my notes
+                and get smart summaries and key points instantly. Studying has
+                become more efficient and enjoyable than ever before.
+              </blockquote>
+              <p class="testimonial-name">&mdash;Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="./images/students/student-1.jpg"
+              alt="Students studying together"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./images/students/student-2.jpg"
+              alt="Online learning session"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./images/students/student-3.jpg"
+              alt="Library study time"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-4.jpg" alt="Group discussion" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-5.jpg" alt="Digital learning" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-6.jpg" alt="Taking notes" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./images/students/student-7.jpg"
+              alt="Student presentation"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-8.jpg" alt="Campus life" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-9.jpg" alt="Research work" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-10.jpg" alt="Study group" />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="./images/students/student-11.jpg"
+              alt="Virtual classroom"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/students/student-12.jpg" alt="Student success" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="secondary-heading">
+                Begin your learning journey today — no cost, just knowledge.
+              </h2>
+              <p class="cta-text">
+                Smart, simple, and interactive learning is waiting for you.
+                Begin your journey today — learn anytime, anywhere. Your first
+                step into Eustad is free!
+              </p>
+              <form
+                action="https://formspree.io/f/manyeeqk"
+                method="POST"
+                class="cta-form"
+              >
+                <div>
+                  <label for="Full Name">Full Name</label>
+                  <input
+                    type="text"
+                    id="Full Name"
+                    name="Full Name"
+                    placeholder="Shaik Arsalan"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    id="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear about us</label>
+                  <select name="select-where" id="select-where" required>
+                    <option value="">Pleace choose one option</option>
+                    <option value="Friends and family">
+                      Friends and family
+                    </option>
+                    <option value="Youtube video">Youtube video</option>
+                    <option value="podcast">podcast</option>
+                    <option value="Facebook ad">Facebook ad</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <button class="btn btn-form">sign up now</button>
+              </form>
+            </div>
+            <div class="cta-img-box" role="img" aria-label="eating food"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              src="./images/e_ustadlogo.png"
+              alt="omnifood-logo"
+              class="logo"
+          /></a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icons" name="logo-youtube"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icons" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icons" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            copyright &copy;<span class="year">2027</span> eusatd, Inc. All
+            rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Us</p>
+          <address class="Contacts">
+            <!-- <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p> -->
+            <p class="address">
+              <!-- <a class="footer-link" href="tel:415-201-6370"> 415-201-6370</a
+              ><br /> -->
+              <a class="footer-link" href="eustadofficial@gmail.com">
+                eustadofficial@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">sing in</a></li>
+            <li><a class="footer-link" href="#">ios app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
         </nav>
-        <button class="btn-mobile-nav"><i class="fa-solid fa-bars"></i></button>
-        <div class="desktop-btns-container">
-                <button class="btn-desktop-nav login-btn btn">Log in</button>
-                <button class="btn-desktop-nav btn signup-btn">Sign up</button>
-                
-            </div>
-        </header>
-        
-        <section class="hero-section">
-            <div class="hero">
-                    <img src="./images/backgrnd_img.png" alt="" class="hero-img" >
-                <article class="hero-description">
-                    <h1 class="primary-heading">
-                        "Empowering the next generation of e learners."
-                    </h1>
-                    <p class="hero-heading">
-                        We make learning Simple. And help students understand the concepts.
-                    </p>
-                    <div class="hero-btns-container">
-                        <button class="btn start-learning-btn">Start learning</button>
-                        <div class="upload-btn-conatiner">
-                            <button class="btn Upload-notes-btn">Upload Notes</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-</body>
-
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About eustad</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
