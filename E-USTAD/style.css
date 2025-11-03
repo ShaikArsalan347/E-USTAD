@@ -195,9 +195,11 @@ body {
 
 .hero {
   padding: 0 4.2rem;
+  max-width: 80rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .hero-text-box {
   display: flex;
@@ -260,6 +262,11 @@ body {
   font-size: 1.8rem;
   line-height: 1.8;
   color: #fff;
+}
+.try-now-btn {
+  background-color: #fff;
+  margin: 2rem 2rem 2rem 0;
+  color: #000;
 }
 
 /* .step-img-box::before,
@@ -380,7 +387,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
-  padding: 1.6rem;
+  padding: 1.6rem 4.5rem;
 }
 
 .gallery-item {
@@ -473,6 +480,7 @@ body {
   background-color: #fff;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 .cta-form input::placeholder {
@@ -539,6 +547,7 @@ body {
   list-style: none;
   display: flex;
   gap: 2.4rem;
+  pointer-events: auto;
 }
 
 .social-icons {

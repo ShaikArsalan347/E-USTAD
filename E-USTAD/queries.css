@@ -1,10 +1,12 @@
 @media screen and (max-width: 84em) {
   .hero {
-    max-width: 110rem;
+    max-width: 100rem;
+    text-align: center;
   }
 
   .primary-heading {
-    font-size: 4.4rem;
+    font-size: 4rem;
+    text-align: center;
   }
 
   .gallery {
@@ -32,6 +34,7 @@
 
   .header {
     padding: 0 3.2rem;
+    max-width: 100rem;
   }
 
   .hero {
@@ -56,6 +59,9 @@
     font-size: 50%;
   }
 
+  .header {
+    max-width: 85rem;
+  }
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -99,7 +105,7 @@
   .btn,
   .btn:link,
   .btn:visited {
-    padding: 1.6rem 2.4rem;
+    /* padding: 1.6rem 2.4rem; */
     font-size: 1.6rem;
   }
 
@@ -153,6 +159,7 @@
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
+    color: #333;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -166,10 +173,29 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+    color: #333;
+  }
+  .sticky .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 3rem;
+    background-color: rgba(183, 183, 183, 0.415);
+    z-index: 999;
+    height: 8rem;
+    box-shadow: 0 1.2rem 3.2rem rgba(194, 82, 82, 0.058);
+    backdrop-filter: blur(40px);
   }
 }
 
 @media screen and (max-width: 44em) {
+  .header {
+    max-width: 70rem;
+  }
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -205,6 +231,9 @@
 }
 
 @media screen and (max-width: 34em) {
+  .header {
+    max-width: 55rem;
+  }
   .grid {
     row-gap: 4.8rem;
   }
@@ -227,7 +256,7 @@
   .btn,
   .btn:link,
   .btn:visited {
-    padding: 2.4rem 1.6rem;
+    /* padding: 2.4rem 1.6rem; */
   }
 
   .hero-img {
@@ -270,5 +299,12 @@
   .pricing-plan--complete::after {
     top: 9%;
     right: -11%;
+  }
+  .gradient-border-step {
+    display: none;
+    padding: 0.3rem;
+    background: linear-gradient(104.51deg, #b8ffb8 10.21%, #62ff00 89.52%);
+    border-radius: 2rem;
+    max-width: fit-content;
   }
 }
